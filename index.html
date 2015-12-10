@@ -5,9 +5,11 @@
         <title>Sarah Saenz</title>
         
         <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <!--<link href='https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Josefin+Sans:400,300,600' rel='stylesheet' type='text/css'>-->
         <link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <link href="css/mobile-menu.css" rel="stylesheet" type="text/css"/>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0 user-scalable=no;">
         <meta name="description" content="Welcome to the first official Saenz site. " />
         <meta name="keywords" content="pi, Sarah, Saenz, pathagorea, art, artist, requests, gaming art, coding, first, site, official, Markus, California, America, circology" />
         <meta name="author" content="Sarah Saenz" />
@@ -19,13 +21,15 @@
                     <!--<a href="index.html" id="logo"><img src="images/logo.svg" alt="Mason L. Logo"/></a>-->
                     <h1><a href="index.html" id="logo">Me</a></h1>
                 </figure>
-                <nav id="menu"> <!-- Menu modifier -->
-                    <ul>
-                        <li class="currentPage"><a href="index.html" title="Home Page">Home</a></li> <!--currentPage background = Black-->
-                        <li><a href="gallery.html" title="Gallery Page">Gallery</a></li>
-                        <li><a href="about-me.html" title="About Me Page">About Me</a></li>
-                        <li><a href="contact-me.html" title="Contact Me Page">Contact Me</a></li>
-                        <li><a href="boxes.html" title="Boxes">Boxes</a></li>
+                <nav id="menu" class="mobile"> <!-- Menu modifier -->
+                    <!--<a></a>-->
+                    <input type="checkbox" id="nav"/><label for="nav">MENU</label>
+                    <ul id="mobileMenu">
+                        <li id="first" class="currentPage"><a href="index.html" title="Home Page">Home</a></li> <!--currentPage background = Black-->
+                        <li id="2"><a href="gallery.html" title="Gallery Page">Gallery</a></li>
+                        <li id="3"><a href="about-me.html" title="About Me Page">About Me</a></li>
+                        <li id="4"><a href="contact-me.html" title="Contact Me Page">Contact Me</a></li>
+                        <li id="last"><a href="boxes.html" title="Boxes">Boxes</a></li>
                     </ul>
                 </nav>
             </div>
@@ -143,7 +147,7 @@
                 humanitatis per seacula quarta decima et quinta decima.Eodem
                 modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
                 in futurum.</p>
-                <a href="about.html" class="button" title="About Page" alt="About Page Button" >
+                <a href="about.html" class="button" id="bottomButton" title="About Page" alt="About Page Button" >
                     Click Here To Learn More!
                 </a>
             </article>

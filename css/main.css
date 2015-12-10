@@ -6,11 +6,15 @@ GLOBAL STYLES FOR NON MOBILE SITE
 ==================================
 */
 
+
 /** {color:#660000;} BE CAREFUL USING THIS GLOBAL SELECTOR FOR MALICE DOTH GATHER ABOUT HIS PERSON*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Courgette);
 
 html, body {
     height:100%;
     cursor:url(../images/cursor.png);
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 
@@ -18,7 +22,8 @@ body {
     margin:0px;
     padding:0px;
     background-color:#FFFFFF;/* light Bluish purple; Medium Slate Blue */
-    font-family:'Lucida Sans', Verdana, sans-serif;
+    /*font-family:'Lucida Sans', Verdana, sans-serif;*/
+    font-family: 'Josefin Sans', sans-serif;
     font-size:16px;
     font-weight:500;
     color:#000000;
@@ -26,10 +31,11 @@ body {
 
 
 h1, h2, h3 {
+    font-family: 'Josefin Sans', sans-serif;
     margin:0px;
     padding:0px;
     color:#9E9EEE;/* grAy */
-    text-shadow:2px 1px 2px #B8B8FF;
+    /*text-shadow:2px 1px 2px #B8B8FF;*/
 }
 
 h1 {
@@ -117,7 +123,7 @@ header {
 #bannerHome {
     border-top:5px solid #5656C6;
     padding:80px 0px;
-    background:url(../images/banner.jpg) no-repeat center center #C9C9F9;
+    background:url(../images/nakedman.jpg) no-repeat center center #C9C9F9;
     background-size:cover;
     overflow:hidden;
 }
@@ -380,8 +386,8 @@ tfoot td {
     font-size:2em !important;
     margin:15px;
     color:#fff;
-    height:28px;
-    width:28px;
+    height:58px;
+    width:58px;
     padding:10px;
     border-radius:100%;
 }
@@ -433,9 +439,6 @@ input {
     
 }
 
-#name, #notpapermail, #private {
-    
-}
 
 input, textarea {
     border-radius:50px;
@@ -464,17 +467,46 @@ fieldset {
     background-color:#FFFFFF;
 }
 
+
+
+.mobile {
+    
+}
+
 @media screen and (max-width:1024px) {
+    
+    #bannerButton {
+        width:350px;
+        font-size:.6em;
+        margin:5% auto;
+    }
+    
     .mainWidth {
         width:100%;
         margin:1% auto;
     }
+    
+    .alignLeft {
+        display:none;
+    }
+    
+    .alignRight {
+        float:none; 
+        width:86%; 
+        margin:5% auto;
+    }    
     .columnA, .columnB, .columnC {
         float:none;
-        width:100%;
+        clear:both;
+        width:86%;
         text-align:center;
-        margin:3% auto;
+        margin:5% auto;
         display:block;
+    }
+    
+    .button {
+        width:33%;
+        margin:3% 36% 3% 31%;
     }
     
     #menu li{
@@ -489,6 +521,36 @@ fieldset {
         float:right;
         
     }
+    
+    .fa {
+        font-size:1em !important;
+        margin:10px;
+        height:35px;
+        width:35px;
+        padding:7px;
+    }
+    
+    #bottomButton{
+        text-align:center;
+        width:33%;
+        margin:0% 36% 3% 31%;
+    }
+    
+    .social p {
+        font-size:.7em;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .button {
+        width:33%;
+        margin:0% 39% 3% 28%;
+    }
+    
+    #bottomButton{
+        margin:0% 39% 3% 28%;
+    }
+    
 }
 
 /* FORM STYLES */
