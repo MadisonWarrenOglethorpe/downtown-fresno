@@ -1,3 +1,8 @@
+
+* {
+    box-sizing:border-box;
+}
+
 .mobile {
     max-width:1000px;
     margin:0px auto;
@@ -5,9 +10,6 @@
     position:relative;
 }
 
-* {
-    box-sizing:border-box;
-}
 
 [type="checkbox"], label {
     display:none;
@@ -27,13 +29,13 @@
         right:20px;
         top:15px;
         border-radius:4px 4px 0px 0px;
-        
+
         color:#FFF;
         font-size:.7em;
         text-align:center;
         font-weight:700px;
     }
-    
+
     label:after {
         content:'';
         display:block;
@@ -43,7 +45,7 @@
         margin:7px 5px;
         box-shadow:0px 10px 0px #FFF, 0px 20px 0px #FFF;
     }
-    
+
     [type="checkbox"]:checked ~ ul {
         display:block;
         z-index:9999;
@@ -51,12 +53,12 @@
         right:20px;
         left:20px;
     }
-    
+
     nav a {
         color:#FFF;
-        
+
     }
-    
+
     nav ul li {
         display:block;
         float:right;
@@ -65,25 +67,58 @@
         text-indent:15px;
         background:#8d8deb;
     }
-    
+
     #mobileMenu {
         margin-top:10px;
         width:400px;
         float:right;
-        background-color:;
         position:relative;
         z-index:9999;
     }
+    .mobileAside {
+         width:50%;
+         margin:0px auto;
+         display:box;
+         clear:none;
+         float:center;
+    }
     
+    .mobileAbout {
+        margin:1%;
+        width:auto;
+        float:center;
+        clear:none;
+    }
+
     nav ul {}
-    
+
     #first {
         border-radius:5px 5px 0px 0px;
     }
-    
+
     #last {
         border-radius:0px 0px 5px 5px;
     }
     
+    .fa {
+    background-color:rgb(158,158,238);
+    border:1px solid #FFF;
+    font-size:1em ;
+    margin:15px;
+    color:#fff;
+    height:30px;
+    width:30px;
+    padding:7px;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    -o-border-radius:100%;
+    border-radius:100%;
+    }
+    
+    
+    .fa:hover {
+        background-color:#dfdff9;
+    }
+
 }
 

@@ -225,6 +225,9 @@ a.button {
     color:#8888ea;
     border:3px solid #8888ea;
     background-color:#FFFFFF;
+    -webkit-border-radius:10px 10px;
+    -moz-border-radius:10px 10px;
+    -o-border-radius:10px 10px;
     border-radius:10px 10px;
     padding:10px 20px;
     float:left;
@@ -236,6 +239,10 @@ a.button:hover{
 .bannerButton {
     border:2px solid #FFFFFF;
     color:#FFFFFF;
+    
+    -webkit-border-radius:10px 10px;
+    -moz-border-radius:10px 10px;
+    -o-border-radius:10px 10px;
     border-radius:10px 10px;
     padding:10px 20px;
     font-weight:900;
@@ -246,9 +253,8 @@ a.button:hover{
 }
 
 #bannerButton {
-    width:33%;
-    margin:0px auto;
-    margin-top:50px;    
+    text-align:center;
+    margin-top:50px 0px;    
 }
 
 /*ABOUT ME STYLES*/
@@ -313,16 +319,24 @@ footer {
 }
 
 .topLeftRound {
+    -webkit-border-radius:15px 0px 0px 0px;
+    -moz-border-radius:15px 0px 0px 0px;
+    -o-border-radius:15px 0px 0px 0px;
     border-radius:15px 0px 0px 0px;
 }
 
 .topRightRound {
+    -webkit-border-radius:0px 15px 0px 0px;
+    -moz-border-radius:0px 15px 0px 0px;
+    -o-border-radius:0px 15px 0px 0px;
     border-radius:0px 15px 0px 0px;
 }
 
 .bottomLeftRound {
+    -webkit-border-radius:0px 0px 0px 15px;
+    -moz-border-radius:0px 0px 0px 15px;
+    -o-border-radius:0px 0px 0px 15px;
     border-radius:0px 0px 0px 15px;
-}
 
 /*.bottomRightRound {
     border-radius:0px 0px 15px 0px;
@@ -352,6 +366,9 @@ tr:hover {
 }
 
 tfoot td {
+    -webkit-border-radius:15px 15px;
+    -moz-border-radius:15px 15px;
+    -o-border-radius:15px 15px;
     border-radius:15px 15px;
     text-align:center;
 }
@@ -383,12 +400,15 @@ tfoot td {
 .fa {
     background-color:rgb(158,158,238);
     border:3px solid #FFF;
-    font-size:2em !important;
+    font-size:2em;
     margin:15px;
     color:#fff;
     height:58px;
     width:58px;
     padding:10px;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    -o-border-radius:100%;
     border-radius:100%;
 }
 
@@ -406,6 +426,10 @@ tfoot td {
 
 .fa-linkedin {
     background-color:#0077b5;
+}
+
+#wufoo-z1fuf9s604pru5c{
+    
 }
 
 #art {
@@ -441,6 +465,9 @@ input {
 
 
 input, textarea {
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    -o-border-radius:50px;
     border-radius:50px;
     box-shadow:2px 2px 5px #8d8deb;
     text-align:center;
@@ -452,6 +479,9 @@ input, textarea {
 form {
     background-color:#9e9e9e;
     width:30%;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    -o-border-radius:30px;
     border-radius:30px;
     padding:30px;
 }
@@ -476,9 +506,8 @@ fieldset {
 @media screen and (max-width:1024px) {
     
     #bannerButton {
-        width:350px;
-        font-size:.6em;
-        margin:5% auto;
+        text-align:center;
+        margin:25px 0px;
     }
     
     .mainWidth {
@@ -486,9 +515,6 @@ fieldset {
         margin:1% auto;
     }
     
-    .alignLeft {
-        display:none;
-    }
     
     .alignRight {
         float:none; 
@@ -551,6 +577,9 @@ fieldset {
         margin:0% 39% 3% 28%;
     }
     
+    
 }
+
+
 
 /* FORM STYLES */

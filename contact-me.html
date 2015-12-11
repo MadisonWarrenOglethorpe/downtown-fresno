@@ -25,25 +25,57 @@
                     <!--<a></a>-->
                     <input type="checkbox" id="nav"/><label for="nav">MENU</label>
                     <ul id="mobileMenu">
-                        <li id="first"  class="currentPage"><a href="index.html" title="Home Page">Home</a></li> <!--currentPage background = Black-->
+                        <li id="first"><a href="index.html" title="Home Page">Home</a></li> <!--currentPage background = Black-->
                         <li id="2"><a href="gallery.html" title="Gallery Page">Gallery</a></li>
                         <li id="3"><a href="about-me.html" title="About Me Page">About Me</a></li>
-                        <li id="4"><a href="contact-me.html" title="Contact Me Page">Contact Me</a></li>
+                        <li id="4" class="currentPage"><a href="contact-me.html" title="Contact Me Page">Contact Me</a></li>
                         <li id="last"><a href="boxes.html" title="Boxes">Boxes</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <div id="bannerHome" >
-            <h1 class="bannerTitle">Markus</h1>
-            <div id="bannerButton">
-                <a href="about.html" class="bannerButton" title="About Page" alt="About Page Button" >Click Here To Learn More!</a>
-            </div>
+            <h1 class="bannerTitle">Contact</h1>
         </div>
-        <section class="mainWidth" id="main" >
-                     
-            
-        </section>
+        <main class="mainWidth" id="main" >      
+            <section class="mobileContact">
+                <h2>My Bio</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet</p>
+                <div></div>
+                <div>
+                    <div id="wufoo-z1fuf9s604pru5c">
+                        Fill out my <a href="https://sarahsaenz.wufoo.com/forms/z1fuf9s604pru5c">online form</a>.
+                        </div>
+                        <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Online contact and registration forms from <a href="http://www.wufoo.com">Wufoo</a>.</div>
+                        <script type="text/javascript">var z1fuf9s604pru5c;(function(d, t) {
+                        var s = d.createElement(t), options = {
+                        'userName':'sarahsaenz',
+                        'formHash':'z1fuf9s604pru5c',
+                        'autoResize':true,
+                        'height':'600',
+                        'async':true,
+                        'host':'wufoo.com',
+                        'header':'show',
+                        'ssl':true};
+                        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+                        s.onload = s.onreadystatechange = function() {
+                        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                        try { z1fuf9s604pru5c = new WufooForm();z1fuf9s604pru5c.initialize(options);z1fuf9s604pru5c.display(); } catch (e) {}};
+                        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                        })(document, 'script');</script>
+
+                </div>
+                <div class="btn">
+                    <a href="about-men.html" class="button" title="info"></a>
+                </div>
+                
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.6315228378694!2d-119.69991988517971!3d36.80338417522092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945c745958d635%3A0x445dd818cf549d93!2sCenter+for+Advanced+Research+and+Technology!5e0!3m2!1sen!2sus!4v1449870161765" width="1200" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                
+            </section>
+        </main>
         
         <hr />
         
@@ -54,7 +86,7 @@
                     <!--</a>-->
                 </figure>
             </aside>
-            <article class="alignRight mobileAbout">
+            <section class="mobileContact">
                 <h2>About Me</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore
