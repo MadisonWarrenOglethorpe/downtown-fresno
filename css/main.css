@@ -497,7 +497,18 @@ fieldset {
     background-color:#FFFFFF;
 }
 
-
+.galleryPhoto{
+    background-color:#3385ff;
+    padding:5px;
+    border:2px solid #0066FF;
+    width:300px;
+    margin:8px;
+    float:left;
+}
+.figcaption{
+    text-align:center;
+    height:50px;
+}
 
 .mobile {
     
@@ -566,6 +577,7 @@ fieldset {
         font-size:.7em;
     }
 }
+
 
 @media screen and (max-width:550px) {
     .button {
