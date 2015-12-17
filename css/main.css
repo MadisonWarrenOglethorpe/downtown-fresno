@@ -432,6 +432,27 @@ tfoot td {
     
 }
 
+#myVideos {  /* 16x9 Aspect ration Formula | 9/6=.5625 or 56.25% */
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0px;
+    overflow:hidden;
+}
+
+#myVideos iframe, #myVideos embed {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+}
+
+.audio{
+    width:300px;
+    margin:0px auto;
+}
+
 #art {
     font-size:30px;
 }
@@ -497,7 +518,12 @@ fieldset {
     background-color:#FFFFFF;
 }
 
-.galleryPhoto{
+/*================ GALLERY STYLES ===============*/
+
+#galleryIntro {
+    text-align:center;
+}
+.galleryPhoto {
     background-color:#3385ff;
     padding:5px;
     border:2px solid #0066FF;
@@ -505,13 +531,48 @@ fieldset {
     margin:8px;
     float:left;
 }
-.figcaption{
+
+.figcaption {
     text-align:center;
     height:50px;
 }
 
-.mobile {
-    
+/*=================== ABOUT STYLES ======================*/
+
+hr {
+    margin:20px;
+    padding:15px 5px;
+}
+
+.alignLeft {
+    background-color:#000;
+    float:left;
+    width:384px;
+    margin-right:24px;
+    margin-top:8px;
+}
+
+.floatLeft {
+    float:left;
+    width:384px;
+    margin-right:20px;
+}
+
+.alignRight {
+    float:right;
+    width:792px;
+    text-align:justify;
+    margin-top:8px;
+}
+
+.floatRight {
+    float:right;
+    margin-left:20px;
+}
+
+.clear {
+    clear:both;
+    padding:20px 0px;
 }
 
 @media screen and (max-width:1024px) {
